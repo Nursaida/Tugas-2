@@ -1,0 +1,196 @@
+#list
+#tuple
+#set
+#dict
+
+# 1. LIST
+#PERULANGAN
+list=["Nunu","Biru",18,150.5,True]
+for i in list:
+  print(i)
+
+#while loop
+i=0
+while i < len(list):
+  print(list[i])
+  i+=1
+  
+  #MENGUPDATE
+list=["Nunu","Biru",18,150.5,True]
+list[1]="Hitam"
+print(list)
+
+#MENGHAPUS
+list=["Nunu","Biru",18,150.5,True]
+
+list.remove("Nunu")
+print(list)
+
+del list[0]
+print(list)
+
+list.pop(1)
+print(list)
+
+#MENAMBAHKAN
+#append
+#insert
+#extend
+
+list=["Nunu","Biru",18,150.5,True]
+
+list.append("Hujan")
+print(list)
+
+list.insert(3,False)
+print(list)
+
+list.extend(["Bulan"])
+print(list)
+
+
+ # 2. TUPLE
+ #PERULANGAN
+ tuple=("Maret","Hujan",20,19.50,True)
+ for i in tuple:
+   print(i)
+   
+   #MENGUPDATE
+tuple=("Maret","Hujan",20,19.50,True)
+for i in tuple:
+   print(i)
+
+#konversi tuple ke list
+tpl=list(tuple)
+tpl[0]="Januari"
+print(tpl)
+   
+   #MENGHAPUS
+tuple=("Maret","Hujan",20,19.50,True)
+for i in tuple:
+   print(i)
+
+#konversi tuple ke list
+tpl=list(tuple)
+#remove
+tpl.remove("Maret")
+print(tpl)
+
+#pop
+tpl.pop(2)
+print(tpl)
+
+#MENAMBAHKAN NILAI YANG BARU
+tuple=("Maret","Hujan",20,19.50,True)
+for i in tuple:
+   print(i)
+
+#konversi tuple ke list
+tpl=list(tuple)
+#append
+tpl.append("Agustus")
+print(tpl)
+
+#insert
+tpl.insert(1,"panas")
+print(tpl)
+
+#extend
+tpl.extend(["False"])
+print(tpl)
+
+
+# 3. SET
+#tipe data set tidak dapat diubah
+#tidak dapat diakses menggunakan indeks
+#sifat random/acak
+#nilai value tidak boleh sama
+
+#PERULANGAN
+#set {}
+set={"Majene",30,36.5,False}
+for i in set:
+  print(i)
+  
+  #MENGUPDATE
+set={"Majene",30,36.5,False}
+for i in set:
+  print(i)
+
+set[2]=50
+print(set)
+
+#MENGHAPUS
+#remove
+#discard
+#clear
+set={"Majene",30,36.5,False}
+for i in set:
+  print(i)
+
+#remove
+set.remove(30)
+print(set)
+
+#discard
+set.discard("Majene")
+print(set)
+
+#clear
+set.clear()
+print(set)
+
+
+#MENAMBAHKAN NILAI VALUENYA
+set={"Majene",30,36.5,False}
+for i in set:
+  print(i)
+
+#add
+#update
+
+#add
+set.add("Lembang")
+print(set)
+
+#update
+set.update([True],[20])
+print(set)
+
+
+# 4. DICTIONARRY
+#anotdered/todak berurutan
+#changeable/bisa berubah-ubah
+#unique/tidak dapat menerima 2 key yang sama
+#{}
+
+#PERULANGAN
+#dict
+dict={"Benda":"Meja","Huruf":"A"}
+for key in dict:
+  print(key,dict[key])
+  
+  #MENGUPDATE
+dict={"Benda":"Meja","Huruf":"A"}
+for key in dict:
+  print(key,dict[key])
+
+dict ["Benda"]="kursi"
+print(dict)
+
+#MENGHAPUS
+#pop
+dict={"Benda":"Meja","Huruf":"A"}
+for key in dict:
+  print(key,dict[key])
+
+dict.pop("Huruf")
+print(dict)
+
+
+#MENAMBAHKAN NILAINYA 
+dict={"Benda":"Meja","Huruf":"A"} 
+
+dict["makanan"]="bolu"
+print(dict)
+
